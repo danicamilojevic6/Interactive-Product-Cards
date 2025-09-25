@@ -1,0 +1,162 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.product-card, .product-card1, .product-card2, .product-card3, .product-card4 {
+    flex-basis: 19%;
+}
+
+.product-card>.top {
+    background-image: url("https://woodmart.xtemos.com/accessories/wp-content/uploads/sites/7/2022/09/green-case-back-290x330.jpg");
+    height: 280px;
+    background-size: cover;
+    position: relative;
+}
+
+.product-card>.top:hover {
+    background-image: url("https://woodmart.b-cdn.net/accessories/wp-content/uploads/sites/7/2022/09/green-case-side-430x491.jpg");
+}
+
+.product-card>.top>.badge, .product-card1>.top>.badge, .product-card2>.top>.badge, .product-card3>.top>.badge, .product-card4>.top>.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(211, 0, 0);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-card>.top>.side-icons, .product-card1>.top>.side-icons, .product-card2>.top>.side-icons, .product-card3>.top>.side-icons, .product-card4>.top>.side-icons {
+    display: none;
+}
+
+.product-card:hover > .top .side-icons, .product-card1:hover > .top .side-icons, .product-card2:hover > .top .side-icons, .product-card3:hover > .top .side-icons, .product-card4:hover > .top .side-icons {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    height: 110px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    justify-content: space-evenly;
+    width: 40px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.product-card>.top>.button, .product-card1>.top>.button, .product-card2>.top>.button, .product-card3>.top>.button, .product-card4>.top>.button {
+    display: none;
+}
+
+.product-card:hover > .top .button, .product-card1:hover > .top .button, .product-card2:hover > .top .button, .product-card3:hover > .top .button, .product-card4:hover > .top .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(87, 137, 211);
+    color: white;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    text-transform: uppercase;
+}
+
+.button > .button1 {
+    display: none;
+}
+.button:hover>.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(42,97,180);
+    color: white;
+    padding: 12px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.category {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.rating {
+    position: relative;
+    color: #EABE12;
+    letter-spacing: 1px;
+}
+
+.price {
+    color: rgb(87, 87, 233);
+    font-weight: 600;
+}
+
+.product-card1>.top {
+    background-image: url("https://woodmart.xtemos.com/accessories/wp-content/uploads/sites/7/2022/09/w-accessories-product-iphone-13-1-3-430x491.jpg");
+    height: 280px;
+    background-size: cover;
+    position: relative;
+}
+
+.product-card1>.top:hover {
+    background-image: url("https://woodmart.b-cdn.net/accessories/wp-content/uploads/sites/7/2022/09/w-accessories-product-iphone-13-1-1-430x491.jpg");
+}
+
+.product-card1>.info .price, .product-card2>.info .price, .product-card3>.info .price, .product-card4>.info .price {
+    color: rgb(87, 87, 233);
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.product-card2>.top {
+    background-image: url("https://woodmart.b-cdn.net/accessories/wp-content/uploads/sites/7/2022/04/w-accessories-product-14-430x491.jpg");
+    height: 280px;
+    background-size: cover;
+    position: relative;
+}
+
+.product-card3>.top {
+    background-image: url("https://woodmart.b-cdn.net/accessories/wp-content/uploads/sites/7/2022/04/magasafe-batteries-5-430x491.jpg");
+    height: 280px;
+    background-size: cover;
+    position: relative;
+}
+
+.product-card4>.top {
+    background-image: url("https://woodmart.b-cdn.net/accessories/wp-content/uploads/sites/7/2022/04/power-banks-wirelles-2-430x491.jpg");
+    height: 280px;
+    background-size: cover;
+    position: relative;
+}
